@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Кондитерская Sweet Dream — свежие торты, пирожные, макаруны и десерты на заказ. Доставка по городу.">
+    <meta name="keywords" content="кондитерская, торты, пирожные, макаруны, десерты, заказать торт, сладости">
+    <meta name="author" content="Сомов Алексей">
+    <meta name="yandex-verification" content="f34d51f0212edb52" />
+    
+    <title>Sweet Dream — Кондитерская | Главная</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">
+                <span class="logo__icon">🍰</span>
+                <span class="logo__text">Sweet Dream</span>
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+                    <li><a href="pages/cakes.html" class="nav__link">Торты</a></li>
+                    <li><a href="pages/pastries.html" class="nav__link">Пирожные</a></li>
+                    <li><a href="pages/macarons.html" class="nav__link">Макаруны</a></li>
+                    <li><a href="pages/drinks.html" class="nav__link">Напитки</a></li>
+                    <li><a href="pages/about.html" class="nav__link">О нас</a></li>
+                    <li><a href="pages/contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <form class="search-form" id="search-form">
+                <input type="text" id="search-input" class="search-form__input" placeholder="Поиск по сайту...">
+                <button type="submit" class="search-form__btn">🔍</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <h1 class="hero__title">Свежие десерты<br>каждый день</h1>
+                <p class="hero__subtitle">Торты, пирожные и десерты ручной работы из натуральных ингредиентов. Порадуйте себя и близких.</p>
+                <a href="pages/cakes.html" class="btn btn--primary">Смотреть каталог</a>
+            </div>
+            <div class="hero__image">
+                <img src="images/hero-cake.jpg" alt="Изысканный торт" class="hero__img">
+            </div>
+        </div>
+    </section>
+
+    <div class="section" id="search-section">
+        <div class="container">
+            <h2 class="section__title" id="search-title" style="display: none;">Результаты поиска</h2>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section__title">Популярные десерты</h2>
+            <p class="section__subtitle">Выбор наших постоянных гостей</p>
+            
+            <div class="products">
+                <article class="product-card">
+                    <div class="product-card__image">
+                        <img src="images/cake-1.jpg" alt="Торт Шоколадный трюфель">
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Шоколадный трюфель</h3>
+                        <p class="product-card__desc">Насыщенный шоколадный бисквит с кремом из темного шоколада.</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">1 800 ₽</span>
+                            <a href="pages/cakes.html" class="btn btn--small">Подробнее</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__image">
+                        <img src="images/cake-2.jpg" alt="Пирожное Красный бархат">
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Красный бархат</h3>
+                        <p class="product-card__desc">Нежный бисквит с кремом из сливочного сыра и ягодным акцентом.</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">350 ₽</span>
+                            <a href="pages/pastries.html" class="btn btn--small">Подробнее</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__image">
+                        <img src="images/cake-3.jpg" alt="Макаруны ассорти">
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Макаруны ассорти</h3>
+                        <p class="product-card__desc">Набор из 6 макарунов с разными вкусами: ваниль, малина, фисташка.</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">750 ₽</span>
+                            <a href="pages/macarons.html" class="btn btn--small">Подробнее</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt">
+        <div class="container about-preview">
+            <div class="about-preview__image">
+                <img src="images/bakery.jpg" alt="Наша кондитерская">
+            </div>
+            <div class="about-preview__content">
+                <h2 class="section__title section__title--left">О кондитерской Sweet Dream</h2>
+                <p>Мы готовим десерты с любовью с 2015 года. Используем только натуральные ингредиенты: сливочное масло, бельгийский шоколад, свежие ягоды и фрукты. Каждый торт — это ручная работа наших кондитеров.</p>
+                <p>Заказывайте торты на день рождения, свадьбу или просто для хорошего настроения. Мы доставим ваш заказ в удобное время.</p>
+                <a href="pages/about.html" class="btn btn--secondary">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services-preview">
+        <div class="container">
+            <h2 class="section__title">Наши сервисы</h2>
+            <p class="section__subtitle">Всё для вашего удобства</p>
+            
+            <div class="services">
+                <a href="pages/news.html" class="service-card">
+                    <span class="service-card__icon">📰</span>
+                    <h3 class="service-card__title">Новости</h3>
+                    <p class="service-card__desc">Новинки и акции</p>
+                </a>
+                <a href="pages/guestbook.html" class="service-card">
+                    <span class="service-card__icon">💬</span>
+                    <h3 class="service-card__title">Гостевая книга</h3>
+                    <p class="service-card__desc">Оставьте отзыв</p>
+                </a>
+                <a href="pages/links.html" class="service-card">
+                    <span class="service-card__icon">🔗</span>
+                    <h3 class="service-card__title">Полезные ссылки</h3>
+                    <p class="service-card__desc">Коллекция ресурсов</p>
+                </a>
+                <a href="pages/contacts.html" class="service-card">
+                    <span class="service-card__icon">📞</span>
+                    <h3 class="service-card__title">Контакты</h3>
+                    <p class="service-card__desc">Свяжитесь с нами</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section__title">Сегодня</h2>
+            <p class="section__subtitle">Актуальная дата и время</p>
+            
+            <div class="informer">
+                <div class="informer__item">
+                    <span class="informer__icon">📅</span>
+                    <p id="informer-date" class="informer__text">Загрузка...</p>
+                </div>
+                <div class="informer__item">
+                    <span class="informer__icon">🕐</span>
+                    <p id="informer-time" class="informer__text">Загрузка...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt">
+        <div class="container">
+            <h2 class="section__title">Календарь</h2>
+            <p class="section__subtitle">Текущий месяц</p>
+            
+            <div id="calendar" class="calendar-wrap"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section__title">Оцените наш сайт</h2>
+            <p class="section__subtitle">Ваше мнение важно для нас</p>
+            
+            <div class="rating-wrap">
+                <div class="rating">
+                    <span class="rating__star" data-value="1">⭐</span>
+                    <span class="rating__star" data-value="2">⭐</span>
+                    <span class="rating__star" data-value="3">⭐</span>
+                    <span class="rating__star" data-value="4">⭐</span>
+                    <span class="rating__star" data-value="5">⭐</span>
+                </div>
+                <p id="rating-result" class="rating__result">Нажмите на звезду, чтобы оценить</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <a href="index.html" class="logo logo--footer">
+                    <span class="logo__icon">🍰</span>
+                    <span class="logo__text">Sweet Dream</span>
+                </a>
+                <p class="footer__text">Кондитерская ручной работы.<br>Свежие десерты каждый день.</p>
+            </div>
+            
+            <div class="footer__col">
+                <h3 class="footer__title">Меню</h3>
+                <ul class="footer__list">
+                    <li><a href="pages/cakes.html">Торты</a></li>
+                    <li><a href="pages/pastries.html">Пирожные</a></li>
+                    <li><a href="pages/macarons.html">Макаруны</a></li>
+                    <li><a href="pages/drinks.html">Напитки</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__col">
+                <h3 class="footer__title">Информация</h3>
+                <ul class="footer__list">
+                    <li><a href="pages/about.html">О нас</a></li>
+                    <li><a href="pages/delivery.html">Доставка и оплата</a></li>
+                    <li><a href="pages/news.html">Новости</a></li>
+                    <li><a href="pages/links.html">Ссылки</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__col">
+                <h3 class="footer__title">Контакты</h3>
+                <ul class="footer__list footer__list--contacts">
+                    <li>📍 г. Обнинск, пр. Маркса, 45, ТРЦ «Триумф Плаза»</li>
+                    <li>📞 +7 (999) 123-45-67</li>
+                    <li>✉️ somoav23@oiate.ru</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <div class="container">
+                <p>© 2026 Кондитерская «Sweet Dream». Все права защищены. | Автор: Сомов Алексей</p>
+                <p class="footer__counter">👁️ Вы посетили сайт: <span id="visit-counter">1</span> раз</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/counter.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/datetime.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/calendar.js"></script>
+
+</body>
+</html>

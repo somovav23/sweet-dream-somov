@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Гостевая книга кондитерской Sweet Dream. Оставьте свой отзыв о нашей продукции.">
+    <meta name="keywords" content="гостевая книга, отзывы, кондитерская, обратная связь">
+    <meta name="author" content="Сомов Алексей">
+    
+    <title>Гостевая книга — Sweet Dream</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a href="../index.html" class="logo">
+                <span class="logo__icon">🍰</span>
+                <span class="logo__text">Sweet Dream</span>
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="../index.html" class="nav__link">Главная</a></li>
+                    <li><a href="cakes.html" class="nav__link">Торты</a></li>
+                    <li><a href="pastries.html" class="nav__link">Пирожные</a></li>
+                    <li><a href="macarons.html" class="nav__link">Макаруны</a></li>
+                    <li><a href="drinks.html" class="nav__link">Напитки</a></li>
+                    <li><a href="about.html" class="nav__link">О нас</a></li>
+                    <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <form class="search-form" id="search-form">
+                <input type="text" id="search-input" class="search-form__input" placeholder="Поиск по сайту...">
+                <button type="submit" class="search-form__btn">🔍</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Гостевая книга</h1>
+            <p class="page-header__subtitle">Поделитесь своим впечатлением</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="guestbook-grid">
+                <div class="guestbook-form">
+                    <h2 class="section__title section__title--left">Оставить отзыв</h2>
+                    <form class="form" action="#" method="post">
+                        <div class="form__group">
+                            <label for="gb-name" class="form__label">Ваше имя *</label>
+                            <input type="text" id="gb-name" name="name" class="form__input" placeholder="Иван Иванов" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="gb-email" class="form__label">Email (не публикуется)</label>
+                            <input type="email" id="gb-email" name="email" class="form__input" placeholder="you@example.com">
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="gb-message" class="form__label">Ваш отзыв *</label>
+                            <textarea id="gb-message" name="message" class="form__textarea" rows="5" placeholder="Что вам понравилось?" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary">Отправить отзыв</button>
+                    </form>
+                </div>
+                
+                <div class="guestbook-list">
+                    <h2 class="section__title section__title--left">Отзывы наших гостей</h2>
+                    
+                    <div class="review">
+                        <div class="review__header">
+                            <span class="review__author">Мария К.</span>
+                            <span class="review__date">12 января 2026</span>
+                        </div>
+                        <p class="review__text">Заказывала торт «Красный бархат» на день рождения дочери. Все гости были в восторге! Очень нежный и не приторный. Спасибо!</p>
+                    </div>
+                    
+                    <div class="review">
+                        <div class="review__header">
+                            <span class="review__author">Алексей П.</span>
+                            <span class="review__date">8 января 2026</span>
+                        </div>
+                        <p class="review__text">Макаруны — просто волшебство! Особенно фисташковые. Обязательно закажу ещё. Доставка быстрая, всё приехало в целости.</p>
+                    </div>
+                    
+                    <div class="review">
+                        <div class="review__header">
+                            <span class="review__author">Ольга С.</span>
+                            <span class="review__date">5 января 2026</span>
+                        </div>
+                        <p class="review__text">Очень уютная кондитерская. Пирожные всегда свежие, кофе отличный. Приходим сюда всей семьёй по выходным.</p>
+                    </div>
+                    
+                    <div class="review">
+                        <div class="review__header">
+                            <span class="review__author">Дмитрий В.</span>
+                            <span class="review__date">2 января 2026</span>
+                        </div>
+                        <p class="review__text">Заказывал корпоративный торт в офис. Сделали быстро, оформили красиво, всем коллегам понравилось. Рекомендую!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <a href="../index.html" class="logo logo--footer">
+                    <span class="logo__icon">🍰</span>
+                    <span class="logo__text">Sweet Dream</span>
+                </a>
+                <p class="footer__text">Кондитерская ручной работы.<br>Свежие десерты каждый день.</p>
+            </div>
+            
+            <div class="footer__col">
+                <h3 class="footer__title">Меню</h3>
+                <ul class="footer__list">
+                    <li><a href="cakes.html">Торты</a></li>
+                    <li><a href="pastries.html">Пирожные</a></li>
+                    <li><a href="macarons.html">Макаруны</a></li>
+                    <li><a href="drinks.html">Напитки</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__col">
+                <h3 class="footer__title">Информация</h3>
+                <ul class="footer__list">
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="delivery.html">Доставка и оплата</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="links.html">Ссылки</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__col">
+                <h3 class="footer__title">Контакты</h3>
+                <ul class="footer__list footer__list--contacts">
+                    <li>📍 г. Обнинск, пр. Маркса, 45, ТРЦ «Триумф Плаза»</li>
+                    <li>📞 +7 (999) 123-45-67</li>
+                    <li>✉️ somoav23@oiate.ru</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <div class="container">
+                <p>© 2026 Кондитерская «Sweet Dream». Все права защищены. | Автор: Сомов Алексей</p>
+                <p class="footer__counter">👁️ Вы посетили сайт: <span id="visit-counter">1</span> раз</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/counter.js"></script>
+    <script src="../js/search.js"></script>
+
+</body>
+</html>

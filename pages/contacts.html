@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакты кондитерской Sweet Dream. Адрес, телефон, электронная почта, форма обратной связи.">
+    <meta name="keywords" content="контакты кондитерской, адрес, телефон, обратная связь">
+    <meta name="author" content="Сомов Алексей">
+    <title>Контакты — Sweet Dream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a href="../index.html" class="logo">
+                <span class="logo__icon">🍰</span>
+                <span class="logo__text">Sweet Dream</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="../index.html" class="nav__link">Главная</a></li>
+                    <li><a href="cakes.html" class="nav__link">Торты</a></li>
+                    <li><a href="pastries.html" class="nav__link">Пирожные</a></li>
+                    <li><a href="macarons.html" class="nav__link">Макаруны</a></li>
+                    <li><a href="drinks.html" class="nav__link">Напитки</a></li>
+                    <li><a href="about.html" class="nav__link">О нас</a></li>
+                    <li><a href="contacts.html" class="nav__link nav__link--active">Контакты</a></li>
+                </ul>
+            </nav>
+            <form class="search-form" id="search-form">
+                <input type="text" id="search-input" class="search-form__input" placeholder="Поиск по сайту...">
+                <button type="submit" class="search-form__btn">🔍</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Контакты</h1>
+            <p class="page-header__subtitle">Мы всегда рады вас слышать</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contacts-grid">
+                <div class="contacts-info">
+                    <h2 class="section__title section__title--left">Наши контакты</h2>
+                    
+                    <div class="contact-item">
+                        <span class="contact-item__icon">📍</span>
+                        <div>
+                            <h3 class="contact-item__title">Адрес</h3>
+                            <p>г. Обнинск, пр. Маркса, 45, ТРЦ «Триумф Плаза»</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-item__icon">📞</span>
+                        <div>
+                            <h3 class="contact-item__title">Телефон</h3>
+                            <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-item__icon">✉️</span>
+                        <div>
+                            <h3 class="contact-item__title">Email</h3>
+                            <p><a href="mailto:somoav23@oiate.ru">somoav23@oiate.ru</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-item__icon">🕐</span>
+                        <div>
+                            <h3 class="contact-item__title">Режим работы</h3>
+                            <p>Ежедневно с 9:00 до 21:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contacts-form">
+                    <h2 class="section__title section__title--left">Напишите нам</h2>
+                    <form class="form" action="#" method="post">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Ваше имя</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" id="email" name="email" class="form__input" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Сообщение</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="5" placeholder="Ваш вопрос или отзыв..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt">
+        <div class="container">
+            <h2 class="section__title">Как нас найти</h2>
+            <p class="section__subtitle">Мы находимся в ТРЦ «Триумф Плаза»</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://yandex.ru/map-widget/v1/?ll=36.593485%2C55.117071&mode=search&oid=1567791644&ol=biz&z=16" 
+                    height="450" 
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <a href="../index.html" class="logo logo--footer">
+                    <span class="logo__icon">🍰</span>
+                    <span class="logo__text">Sweet Dream</span>
+                </a>
+                <p class="footer__text">Кондитерская ручной работы.<br>Свежие десерты каждый день.</p>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Меню</h3>
+                <ul class="footer__list">
+                    <li><a href="cakes.html">Торты</a></li>
+                    <li><a href="pastries.html">Пирожные</a></li>
+                    <li><a href="macarons.html">Макаруны</a></li>
+                    <li><a href="drinks.html">Напитки</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Информация</h3>
+                <ul class="footer__list">
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="delivery.html">Доставка и оплата</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="links.html">Ссылки</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Контакты</h3>
+                <ul class="footer__list footer__list--contacts">
+                    <li>📍 г. Обнинск, пр. Маркса, 45, ТРЦ «Триумф Плаза»</li>
+                    <li>📞 +7 (999) 123-45-67</li>
+                    <li>✉️ somoav23@oiate.ru</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>© 2026 Кондитерская «Sweet Dream». Все права защищены. | Автор: Сомов Алексей</p>
+                <p class="footer__counter">👁️ Вы посетили сайт: <span id="visit-counter">1</span> раз</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/counter.js"></script>
+    <script src="../js/search.js"></script>
+
+</body>
+</html>
